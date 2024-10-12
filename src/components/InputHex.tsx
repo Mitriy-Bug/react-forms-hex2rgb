@@ -15,7 +15,7 @@ export function InputHex() {
             return;
           }
         //преобразуем шестнадцатиричные значения в десятичные
-        let resultRgb = `rgb(${parseInt(resultHex[1], 16)}, ${parseInt(resultHex[2], 16)}, ${parseInt(resultHex[3], 16)})`;
+        const resultRgb = `rgb(${parseInt(resultHex[1], 16)}, ${parseInt(resultHex[2], 16)}, ${parseInt(resultHex[3], 16)})`;
         setColor(resultRgb);//передаем в новое состояние
     }
     return (
